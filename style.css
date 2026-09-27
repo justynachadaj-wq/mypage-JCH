@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    /* Łagodne, jaśniutkie tło z prostym gradientem od góry do dołu */
+    background: linear-gradient(to bottom, #E4E4DA, #c56a63ac);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* menu */
+header {
+    /* Gradient dla paska menu: od niebieskiego do fioletowego */
+    background: linear-gradient(to right, #c56a63,  #E4E4DA);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    font-weight: bold;
+}
+
+/* Efekt przycisk w menu */
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* GŁÓWNA TREŚĆ STRONY */
+.content-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    flex: 1; /* Spycha stopkę na sam dół */
+    width: 100%;
+}
+
+/* baner na stronie głównej */
+.hero {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.hero h1 {
+    color: #c56a63;
+    margin-bottom: 10px;
+}
+
+/* Nagłówki na  stronach */
+.section-title {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #c56a63;
+}
+
+/* KAFELKI ZWIERZAKI */
+.card-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    border-top: 5px solid #c56a63; /* Kolorowy pasek na górze kafelka */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #c56a63;
+}
+
+/*LISTA HOBBY*/
+.hobby-list {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    list-style: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.hobby-list li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.hobby-list li:last-child {
+    border-bottom: none;
+}
+/* ig tytuł*/
+h1 {
+    
+    text-align: center;
+    border-radius: 40px;      
+    padding: 12px 20px;       
+    display: inline-block;   
+}
+
+
+main {
+    text-align: center;       
+}
+/*  PRZYCISKI SOCIAL MEDIA */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    
+}
+
+.social-btn {
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    justify-content: center;
+
+   
+}
+
+
+.social-btn {
+    display: inline-block;
+    margin: 10px auto;
+}
+
+/* przcisk ig */
+.instagram {
+   background-color: #c56a63;
+
+}
+
+/* dół strony */
+footer {
+    text-align: center;
+    padding: 35px;
+    background-color: #c56a6391;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Kod dla wszystkich zdjęć w kafelkach */
+.card img {
+    border-radius: 15px;      /* Im większa wartość, tym bardziej zaokrąglone rogi (np. 15px, 20px) */
+    width: 100%;              /* Zdjęcie dopasuje się do szerokości kafelka */
+    max-width: 250px;         /* Maksymalna szerokość zdjęcia */
+    height: 200px;            /* Stała wysokość, żeby wszystkie zdjęcia były równe */
+    object-fit: cover;        /* Wytnie zdjęcie tak, aby nie było rozciągnięte ani zniekształcone */
+    display: block;
+    margin: 10px auto;        /* Wyśrodkowuje zdjęcie w kafelku */
+}
