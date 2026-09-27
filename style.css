@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     color: #333;
-    /* Łagodne, jaśniutkie tło z prostym gradientem od góry do dołu */
+    /*tło*/
     background: linear-gradient(to bottom, #E4E4DA, #c56a63ac);
     min-height: 100vh;
     display: flex;
@@ -16,7 +16,7 @@ body {
 
 /* menu */
 header {
-    /* Gradient dla paska menu: od niebieskiego do fioletowego */
+    /* PASEK menu */
     background: linear-gradient(to right, #c56a63,  #E4E4DA);
 }
 
@@ -34,7 +34,7 @@ nav a {
     font-weight: bold;
 }
 
-/* Efekt przycisk w menu */
+/* przycisk w menu */
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
@@ -45,7 +45,7 @@ nav a:hover {
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
-    flex: 1; /* Spycha stopkę na sam dół */
+    flex: 1; 
     width: 100%;
 }
 
@@ -83,7 +83,7 @@ nav a:hover {
     border-radius: 10px;
     flex: 1;
     min-width: 250px;
-    border-top: 5px solid #c56a63; /* Kolorowy pasek na górze kafelka */
+    border-top: 5px solid #c56a63; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -163,13 +163,12 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Kod dla wszystkich zdjęć w kafelkach */
+/*KSZTAŁT ZDJĘĆ */
 .card img {
-    border-radius: 15px;      /* Im większa wartość, tym bardziej zaokrąglone rogi (np. 15px, 20px) */
-    width: 100%;              /* Zdjęcie dopasuje się do szerokości kafelka */
-    max-width: 250px;         /* Maksymalna szerokość zdjęcia */
-    height: 200px;            /* Stała wysokość, żeby wszystkie zdjęcia były równe */
-    object-fit: cover;        /* Wytnie zdjęcie tak, aby nie było rozciągnięte ani zniekształcone */
-    display: block;
-    margin: 10px auto;        /* Wyśrodkowuje zdjęcie w kafelku */
+    border-radius: 15px;     
+    width: 100%;              
+    max-width: 250px;         
+    height: 200px;            
+    object-fit: cover;       
+    margin: 10px auto;        
 }
